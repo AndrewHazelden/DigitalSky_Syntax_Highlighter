@@ -1,5 +1,5 @@
 # DigitalSky Syntax Highlighters #
-**Version 1** Released September 6, 2013  
+**Version 1.1** Released September 8, 2013  
 by Andrew Hazelden
 
 ![This is a sample show script that has syntax highlighting](digitalsky_highlighter.png)

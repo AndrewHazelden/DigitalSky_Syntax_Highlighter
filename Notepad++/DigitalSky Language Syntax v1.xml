@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="DigitalSky" ext="" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="2" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00; 00&apos; 01 02 03 04</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1">j</Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">+ - { } * / % ( ) =</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">AbsMag Add All alpha Ambient Antialiasing Animate Annual AppMag aqua Astro Attach AURORA Auto AutoView Azimuth Backbone Buf Backlight BACKWARD bdplane Begin Bighalo black Blink blue bonded BOTH bottom boxes brown Button ButtonLatch ButtonReset ButtonText ButtonUnlatch BVColor Camera Canopus Capture Celestial Center Channel Chapter Clear Close Cls Color Colorshift COMET Comment Con Cone Cont Control Controller Corona countdown cpk CUBE Cue Cull cyan CYLINDER Date Delay Detent Dial Dist diffuse diffusemap Diurnal Direction Display Distance Droplet Dome DV EarthClouds EarthObj Effect Elevation emissive Exec Exo Face Falloff Filter FlipU FlipV Fly Fog Folder Follow Font footer FORWARD FPS Frame Gamma Goto gray green Group Halo HD Home header HEMISPHERE hetero Hide hip IAX ICEHALO Idle Image Info Init Intensity Interior Jbox Jbox1 Julian Label Labels Latitude LatLock Layer3D LCD Level Light LightBlink LightOff LightOn LightToggle Lines Load Local LocalAxis LocalTime Locate lock LOD LogFly LongMod LongSet Lookat Loop Lum Macro magenta maroon Mask Material MercuryObj Message midnight MinSize Mode Navigator navy Next Nohalo noon normal normalmap north now Object Opaque Open orange ORBIT orbiter Orbits Orient Ortho Pan Path Pause Picture Ping pink Planetarium PLANEXY PLANEXZ Play Plugin Point Points Pointsize Pole Poll polygons polysize Pos Position Poweron Preload Previous ProperName Protect purple Radar RAINBOW Rainbow RAINBOW Range RANGE Rate Rawview RealTime Reboot red Ref Reference Remove Rewind Replay Reset RollCI RollSS Rotate Run Satellites Sc Star Scale Scene Seek Select Set SetJulian SetLatitude SetLongitude Shimmer Show Shutdown ShutterDown ShutterUp Stretch silver Sirius Size Slider slum Smallhalo Softedge Sol Solar SolarSystem Sound south SpaceCraft3 spacefill specular specularmap Speed SPHERE SPHERE-A SPHERE-E SPHERE-H SPHERE-M Spice Spot Stars Start Stereo Stop SunObj sunrise sunset Swap SweetSpot System TAG teal Tel TeadrU TeadrV Text texture Tilt Time title today top Trail Trails Transform Unit Unload unlock VenusObj Video View violet Volume Vote Wave white wireframe World Yaw YawPitchCI YawPitchSS yellow Zero One SrcAlpha InvSrcAlpha DestColor BlendA TflipU TflipV cw ccw Clamp Mirror Wrap Inversed</Keywords>
+            <Keywords name="Keywords2"></Keywords>
+            <Keywords name="Keywords3">on off inverse invert normal none invert</Keywords>
+            <Keywords name="Keywords4">a um millimeter m km mm gm au tm ly p kp mp gp</Keywords>
+            <Keywords name="Keywords5"></Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00&quot; 01 02&quot; 03[ 04 05] 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="000000" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="66747B" bgColor="293134" fontName="" fontStyle="2" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="FFCD22" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="93C763" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="000000" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="FFCE22" bgColor="293134" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="FFCD22" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="678CB1" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="E8E2B7" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="678CB1" bgColor="293134" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ Author: Andrew Hazelden <andrew@andrewhazelden.com
+ Copyright (C) 2013 Andrew Hazelden
+
+  Released under a Creative Commons Attribution-ShareAlike License:
+  <http://creativecommons.org/licenses/by-sa/2.0/>
+  
+
+  Windows gedit language file installation
+  On Windows you need to copy the DigitalSky.lang file to the language-specs folder located at:
+    C:\Program Files (x86)\gedit\share\gtksourceview-2.0\language-specs\DigitalSky.lang
+    or
+    C:\Program Files\gedit\share\gtksourceview-2.0\language-specs\DigitalSky.lang
+  
+  
+  Linux gedit language file installation
+  On Linux you need to copy the DigitalSky.lang file to the language-specs folder located at:
+     /usr/local/share/gtksourceview-2.0/language-specs/DigitalSky.lang
+     or
+     /usr/share/gtksourceview-2.0/language-specs/DigitalSky.lang
+  
+-->
+
+<language id="dsky" _name="DigitalSky" version="2.0" _section="Scientific">
+
+  <metadata>
+    <property name="mimetypes">text/plain</property>
+    <property name="globs">*.txt</property>
+    <property name="line-comment-start">;</property>
+  </metadata>
+
+  <styles>
+  <style id="decimal"           _name="Decimal number"      map-to="def:decimal"/>
+  <style id="float"           _name="Floating Point number"      map-to="def:decimal"/>
+  <style id="comment-semicolon"           _name="Comment"             map-to="def:comment"/>
+  <style id="comment-apos"           _name="Comment"             map-to="def:comment"/>
+  <style id="string"            _name="String"              map-to="def:string"/>
+  <style id="escaped-character" _name="Escaped Character" map-to="def:special-char"/>
+  <style id="timecode"      _name="Timecode"        map-to="def:identifier"/>
+  <style id="keywords"           _name="Keywords"             map-to="def:keyword"/>
+  </styles>
+
+ <default-regex-options case-sensitive="false"/>
+  
+  <definitions>
+  <context id="dsky">
+    <include>
+      <!-- Start of Digital Sky Syntax Elements -->
+
+      <!-- Comments -->
+      <context id="comment-semicolon" style-ref="comment-semicolon" end-at-line-end="true" class-disabled="no-spell-check">
+        <start>;</start>
+        <end>\n</end>
+        <include>
+          <context ref="def:in-line-comment"/>
+        </include>
+      </context>
+      
+      <context id="comment-apos" style-ref="comment-apos" end-at-line-end="true" class-disabled="no-spell-check">
+        <start>'</start>
+        <end>\n</end>
+        <include>
+          <context ref="def:in-line-comment"/>
+        </include>
+      </context>
+      
+      <!-- Strings -->
+       <context id="string" end-at-line-end="true" style-ref="string">
+        <start>"</start>
+        <end>"</end>
+        <include>
+          <context id="escaped-character" style-ref="escaped-character">
+            <match>\\"</match>
+          </context>
+        </include>
+      </context>
+      
+      <!-- Numbers -->
+       
+       <context id="decimal" style-ref="decimal">
+                    <match extended="true">
+                        (?&lt;![\w\.])
+                        [0-9]+[uUlL]*
+                        (?![\w\.])
+                    </match>
+                </context>
+        
+          <!-- http://www.lysator.liu.se/c/ANSI-C-grammar-l.html -->
+                <context id="float" style-ref="float">
+                    <match extended="true">
+                        (?&lt;![\w\.])
+                        ((\.[0-9]+ | [0-9]+\.[0-9]*) ([Ee][+-]?[0-9]*)? |
+                         ([0-9]+[Ee][+-]?[0-9]*))
+                        [fFlL]?
+                        (?![\w\.])
+                    </match>
+                </context>
+
+       
+      <!-- Timecode using the [0:0:0]  format-->
+       <context id="timecode" style-ref="timecode" end-at-line-end="true">
+        <start>\[</start>
+        <end>\]</end>
+             </context>
+      
+      <!-- Keywords -->
+      <context id="keywords" style-ref="keywords">
+        <prefix>(?i)\b</prefix> <!-- case insensitive -->
+        <keyword>AbsMag</keyword>
+        <keyword>Add</keyword>
+        <keyword>All</keyword>
+        <keyword>alpha</keyword>
+        <keyword>Ambient</keyword>
+        <keyword>Antialiasing</keyword>
+        <keyword>Animate</keyword>
+        <keyword>Annual</keyword>
+        <keyword>AppMag</keyword>
+        <keyword>aqua</keyword>
+        <keyword>Astro</keyword>
+        <keyword>Attach</keyword>
+        <keyword>AURORA</keyword>
+        <keyword>Auto</keyword>
+        <keyword>AutoView</keyword>
+        <keyword>Azimuth</keyword>
+        <keyword>Backbone</keyword>
+        <keyword>Buf</keyword>
+        <keyword>Backlight</keyword>
+        <keyword>BACKWARD</keyword>
+        <keyword>bdplane</keyword>
+        <keyword>Begin</keyword>
+        <keyword>Bighalo</keyword>
+        <keyword>black</keyword>
+        <keyword>Blink</keyword>
+        <keyword>blue</keyword>
+        <keyword>bonded</keyword>
+        <keyword>BOTH</keyword>
+        <keyword>bottom</keyword>
+        <keyword>boxes</keyword>
+        <keyword>brown</keyword>
+        <keyword>Button</keyword>
+        <keyword>ButtonLatch</keyword>
+        <keyword>ButtonReset</keyword>
+        <keyword>ButtonText</keyword>
+        <keyword>ButtonUnlatch</keyword>
+        <keyword>BVColor</keyword>
+        <keyword>Camera</keyword>
+        <keyword>Canopus</keyword>
+        <keyword>Capture</keyword>
+        <keyword>Celestial</keyword>
+        <keyword>Center</keyword>
+        <keyword>Channel</keyword>
+        <keyword>Chapter</keyword>
+        <keyword>Clear</keyword>
+        <keyword>Close</keyword>
+        <keyword>Cls</keyword>
+        <keyword>Color</keyword>
+        <keyword>Colorshift</keyword>
+        <keyword>COMET</keyword>
+        <keyword>Comment</keyword>
+        <keyword>Con</keyword>
+        <keyword>Cone</keyword>
+        <keyword>Cont</keyword>
+        <keyword>Control</keyword>
+        <keyword>Controller</keyword>
+        <keyword>Corona</keyword>
+        <keyword>countdown</keyword>
+        <keyword>cpk</keyword>
+        <keyword>CUBE</keyword>
+        <keyword>Cue</keyword>
+        <keyword>Cull</keyword>
+        <keyword>cyan</keyword>
+        <keyword>CYLINDER</keyword>
+        <keyword>Date</keyword>
+        <keyword>Delay</keyword>
+        <keyword>Detent</keyword>
+        <keyword>Dial</keyword>
+        <keyword>Dist</keyword>
+        <keyword>diffuse</keyword>
+        <keyword>diffusemap</keyword>
+        <keyword>Diurnal</keyword>
+        <keyword>Direction</keyword>
+        <keyword>Display</keyword>
+        <keyword>Distance</keyword>
+        <keyword>Droplet</keyword>
+        <keyword>Dome</keyword>
+        <keyword>DV</keyword>
+        <keyword>EarthClouds</keyword>
+        <keyword>EarthObj</keyword>
+        <keyword>Effect</keyword>
+        <keyword>Elevation</keyword>
+        <keyword>emissive</keyword>
+        <keyword>Exec</keyword>
+        <keyword>Exo</keyword>
+        <keyword>Face</keyword>
+        <keyword>Falloff</keyword>
+        <keyword>Filter</keyword>
+        <keyword>FlipU</keyword>
+        <keyword>FlipV</keyword>
+        <keyword>Fly</keyword>
+        <keyword>Fog</keyword>
+        <keyword>Folder</keyword>
+        <keyword>Follow</keyword>
+        <keyword>Font</keyword>
+        <keyword>footer</keyword>
+        <keyword>FORWARD</keyword>
+        <keyword>FPS</keyword>
+        <keyword>Frame</keyword>
+        <keyword>Gamma</keyword>
+        <keyword>Goto</keyword>
+        <keyword>gray</keyword>
+        <keyword>green</keyword>
+        <keyword>Group</keyword>
+        <keyword>Halo</keyword>
+        <keyword>HD</keyword>
+        <keyword>Home</keyword>
+        <keyword>header</keyword>
+        <keyword>HEMISPHERE</keyword>
+        <keyword>hetero</keyword>
+        <keyword>Hide</keyword>
+        <keyword>hip</keyword>
+        <keyword>IAX</keyword>
+        <keyword>ICEHALO</keyword>
+        <keyword>Idle</keyword>
+        <keyword>Image</keyword>
+        <keyword>Info</keyword>
+        <keyword>Init</keyword>
+        <keyword>Intensity</keyword>
+        <keyword>Interior</keyword>
+        <keyword>Jbox</keyword>
+        <keyword>Jbox1</keyword>
+        <keyword>Julian</keyword>
+        <keyword>Label</keyword>
+        <keyword>Labels</keyword>
+        <keyword>Latitude</keyword>
+        <keyword>LatLock</keyword>
+        <keyword>Layer3D</keyword>
+        <keyword>LCD</keyword>
+        <keyword>Level</keyword>
+        <keyword>Light</keyword>
+        <keyword>LightBlink</keyword>
+        <keyword>LightOff</keyword>
+        <keyword>LightOn</keyword>
+        <keyword>LightToggle</keyword>
+        <keyword>Lines</keyword>
+        <keyword>Load</keyword>
+        <keyword>Local</keyword>
+        <keyword>LocalAxis</keyword>
+        <keyword>LocalTime</keyword>
+        <keyword>Locate</keyword>
+        <keyword>lock</keyword>
+        <keyword>LOD</keyword>
+        <keyword>LogFly</keyword>
+        <keyword>LongMod</keyword>
+        <keyword>LongSet</keyword>
+        <keyword>Lookat</keyword>
+        <keyword>Loop</keyword>
+        <keyword>Lum</keyword>
+        <keyword>Macro</keyword>
+        <keyword>magenta</keyword>
+        <keyword>maroon</keyword>
+        <keyword>Mask</keyword>
+        <keyword>Material</keyword>
+        <keyword>MercuryObj</keyword>
+        <keyword>Message</keyword>
+        <keyword>midnight</keyword>
+        <keyword>MinSize</keyword>
+        <keyword>Mode</keyword>
+        <keyword>Navigator</keyword>
+        <keyword>navy</keyword>
+        <keyword>Next</keyword>
+        <keyword>Nohalo</keyword>
+        <keyword>noon</keyword>
+        <keyword>normal</keyword>
+        <keyword>normalmap</keyword>
+        <keyword>north</keyword>
+        <keyword>now</keyword>
+        <keyword>Object</keyword>
+        <keyword>Opaque</keyword>
+        <keyword>Open</keyword>
+        <keyword>orange</keyword>
+        <keyword>ORBIT</keyword>
+        <keyword>orbiter</keyword>
+        <keyword>Orbits</keyword>
+        <keyword>Orient</keyword>
+        <keyword>Ortho</keyword>
+        <keyword>Pan</keyword>
+        <keyword>Path</keyword>
+        <keyword>Pause</keyword>
+        <keyword>Picture</keyword>
+        <keyword>Ping</keyword>
+        <keyword>pink</keyword>
+        <keyword>Planetarium</keyword>
+        <keyword>PLANEXY</keyword>
+        <keyword>PLANEXZ</keyword>
+        <keyword>Play</keyword>
+        <keyword>Plugin</keyword>
+        <keyword>Point</keyword>
+        <keyword>Points</keyword>
+        <keyword>Pointsize</keyword>
+        <keyword>Pole</keyword>
+        <keyword>Poll</keyword>
+        <keyword>polygons</keyword>
+        <keyword>polysize</keyword>
+        <keyword>Pos</keyword>
+        <keyword>Position</keyword>
+        <keyword>Poweron</keyword>
+        <keyword>Preload</keyword>
+        <keyword>Previous</keyword>
+        <keyword>ProperName</keyword>
+        <keyword>Protect</keyword>
+        <keyword>purple</keyword>
+        <keyword>Radar</keyword>
+        <keyword>RAINBOW</keyword>
+        <keyword>Rainbow</keyword>
+        <keyword>RAINBOW</keyword>
+        <keyword>Range</keyword>
+        <keyword>RANGE</keyword>
+        <keyword>Rate</keyword>
+        <keyword>Rawview</keyword>
+        <keyword>RealTime</keyword>
+        <keyword>Reboot</keyword>
+        <keyword>red</keyword>
+        <keyword>Ref</keyword>
+        <keyword>Reference</keyword>
+        <keyword>Remove</keyword>
+        <keyword>Rewind</keyword>
+        <keyword>Replay</keyword>
+        <keyword>Reset</keyword>
+        <keyword>RollCI</keyword>
+        <keyword>RollSS</keyword>
+        <keyword>Rotate</keyword>
+        <keyword>Run</keyword>
+        <keyword>Satellites</keyword>
+        <keyword>Sc</keyword>
+        <keyword>Star</keyword>
+        <keyword>Scale</keyword>
+        <keyword>Scene</keyword>
+        <keyword>Seek</keyword>
+        <keyword>Select</keyword>
+        <keyword>Set</keyword>
+        <keyword>SetJulian</keyword>
+        <keyword>SetLatitude</keyword>
+        <keyword>SetLongitude</keyword>
+        <keyword>Shimmer</keyword>
+        <keyword>Show</keyword>
+        <keyword>Shutdown</keyword>
+        <keyword>ShutterDown</keyword>
+        <keyword>ShutterUp</keyword>
+        <keyword>Stretch</keyword>
+        <keyword>silver</keyword>
+        <keyword>Sirius</keyword>
+        <keyword>Size</keyword>
+        <keyword>Slider</keyword>
+        <keyword>slum</keyword>
+        <keyword>Smallhalo</keyword>
+        <keyword>Softedge</keyword>
+        <keyword>Sol</keyword>
+        <keyword>Solar</keyword>
+        <keyword>SolarSystem</keyword>
+        <keyword>Sound</keyword>
+        <keyword>south</keyword>
+        <keyword>SpaceCraft3</keyword>
+        <keyword>spacefill</keyword>
+        <keyword>specular</keyword>
+        <keyword>specularmap</keyword>
+        <keyword>Speed</keyword>
+        <keyword>SPHERE</keyword>
+        <keyword>SPHERE-A</keyword>
+        <keyword>SPHERE-E</keyword>
+        <keyword>SPHERE-H</keyword>
+        <keyword>SPHERE-M</keyword>
+        <keyword>Spice</keyword>
+        <keyword>Spot</keyword>
+        <keyword>Stars</keyword>
+        <keyword>Start</keyword>
+        <keyword>Stereo</keyword>
+        <keyword>Stop</keyword>
+        <keyword>SunObj</keyword>
+        <keyword>sunrise</keyword>
+        <keyword>sunset</keyword>
+        <keyword>Swap</keyword>
+        <keyword>SweetSpot</keyword>
+        <keyword>System</keyword>
+        <keyword>TAG</keyword>
+        <keyword>teal</keyword>
+        <keyword>Tel</keyword>
+        <keyword>TeadrU</keyword>
+        <keyword>TeadrV</keyword>
+        <keyword>Text</keyword>
+        <keyword>texture</keyword>
+        <keyword>Tilt</keyword>
+        <keyword>Time</keyword>
+        <keyword>title</keyword>
+        <keyword>today</keyword>
+        <keyword>top</keyword>
+        <keyword>Trail</keyword>
+        <keyword>Trails</keyword>
+        <keyword>Transform</keyword>
+        <keyword>Unit</keyword>
+        <keyword>Unload</keyword>
+        <keyword>unlock</keyword>
+        <keyword>VenusObj</keyword>
+        <keyword>Video</keyword>
+        <keyword>View</keyword>
+        <keyword>violet</keyword>
+        <keyword>Volume</keyword>
+        <keyword>Vote</keyword>
+        <keyword>Wave</keyword>
+        <keyword>white</keyword>
+        <keyword>wireframe</keyword>
+        <keyword>World</keyword>
+        <keyword>Yaw</keyword>
+        <keyword>YawPitchCI</keyword>
+        <keyword>YawPitchSS</keyword>
+        <keyword>yellow</keyword>
+        <keyword>Zero</keyword>
+        <keyword>One</keyword>
+        <keyword>SrcAlpha</keyword>
+        <keyword>InvSrcAlpha</keyword>
+        <keyword>DestColor</keyword>
+        <keyword>BlendA</keyword>
+        <keyword>TflipU</keyword>
+        <keyword>TflipV</keyword>
+        <keyword>cw</keyword>
+        <keyword>ccw</keyword>
+        <keyword>Clamp</keyword>
+        <keyword>Mirror</keyword>
+        <keyword>Wrap</keyword>
+        <keyword>Inversed</keyword>
+        <keyword>on</keyword>
+        <keyword>off</keyword>
+        <keyword>inverse</keyword>
+        <keyword>invert</keyword>
+        <keyword>normal</keyword>
+        <keyword>none</keyword>
+        <keyword>invert</keyword>
+        <keyword>a</keyword>
+        <keyword>um</keyword>
+        <keyword>millimeter</keyword>
+        <keyword>m</keyword>
+        <keyword>km</keyword>
+        <keyword>mm</keyword>
+        <keyword>gm</keyword>
+        <keyword>au</keyword>
+        <keyword>tm</keyword>
+        <keyword>ly</keyword>
+        <keyword>p</keyword>
+        <keyword>kp</keyword>
+        <keyword>mp</keyword>
+        <keyword>gp</keyword>
+      </context>
+
+    <!-- End of Digital Sky Syntax Elements -->
+    </include>
+  </context>
+</definitions>
+</language>

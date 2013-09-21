@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!-- 
+
+  DigitalSky Codeless Language Module for BBEdit and TextWrangler
+  Version 1.0 B1 - Sept 6, 2013
+
+  Created by Andrew Hazelden
+  andrew@andrewhazelden.com
+  http://www.andrewhazelden.com
+  
+  Released under a Creative Commons Attribution-ShareAlike License:
+	<http://creativecommons.org/licenses/by-sa/2.0/>
+
+  To install, copy here:
+    
+      ~/Library/Application Support/BBEdit/Language Modules/
+
+  or here:
+
+    ~/Library/Application Support/TextWrangler/Language Modules/
+
+  and relaunch BBEdit or TextWrangler.
+
+-->
+
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>Copyright</key>
+	<string>Copyright © 2013, Andrew Hazelden</string>
+	
+	<key>Author</key>
+	<string>Andrew Hazelden</string>
+	
+	<key>Version</key>
+	<string>1.0</string>
+
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+
+	<key>BBLMLanguageCode</key>
+	<string>DSky</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>DigitalSky</string>
+
+	<key>BBLMScansFunctions</key>
+	<false/>
+
+	<key>BBLMFileNamesToMatch</key>
+	<array>
+		<string>f1.txt</string>
+		<string>f2.txt</string>
+		<string>f3.txt</string>
+		<string>f4.txt</string>
+		<string>f5.txt</string>
+		<string>f6.txt</string>
+		<string>f7.txt</string>
+		<string>f8.txt</string>
+		<string>f9.txt</string>
+		<string>f10.txt</string>
+		<string>f11.txt</string>
+		<string>f12.txt</string>
+		<string>f13.txt</string>
+		<string>f14.txt</string>
+		<string>f15.txt</string>
+		<string>f16.txt</string>
+		<string>f17.txt</string>
+		<string>f18.txt</string>
+		<string>f19.txt</string>
+		<string>f20.txt</string>
+		<string>f21.txt</string>
+		<string>f22.txt</string>
+		<string>f23.txt</string>
+		<string>f24.txt</string>
+		<string>f25.txt</string>
+		<string>f26.txt</string>
+		<string>f27.txt</string>
+		<string>f28.txt</string>
+		<string>f29.txt</string>
+		<string>f30.txt</string>
+		<string>f31.txt</string>
+		<string>f32.txt</string>
+		<string>f33.txt</string>
+		<string>f34.txt</string>
+		<string>f35.txt</string>
+		<string>f36.txt</string>
+		<string>f37.txt</string>
+		<string>f38.txt</string>
+		<string>f39.txt</string>
+		<string>f40.txt</string>
+		<string>f41.txt</string>
+		<string>f42.txt</string>
+		<string>f43.txt</string>
+		<string>f44.txt</string>
+		<string>f45.txt</string>
+		<string>f46.txt</string>
+		<string>f47.txt</string>
+		<string>f48.txt</string>
+		<string>f49.txt</string>
+		<string>f50.txt</string>
+		<string>f51.txt</string>
+		<string>f52.txt</string>
+		<string>f53.txt</string>
+		<string>f54.txt</string>
+		<string>f55.txt</string>
+		<string>f56.txt</string>
+		<string>f57.txt</string>
+		<string>f58.txt</string>
+		<string>f59.txt</string>
+		<string>f60.txt</string>
+		<string>f61.txt</string>
+		<string>f62.txt</string>
+		<string>f63.txt</string>
+		<string>f64.txt</string>
+		<string>f65.txt</string>
+		<string>f66.txt</string>
+		<string>f67.txt</string>
+		<string>f68.txt</string>
+		<string>f69.txt</string>
+		<string>f70.txt</string>
+		<string>f71.txt</string>
+		<string>f72.txt</string>
+		<string>f73.txt</string>
+		<string>f74.txt</string>
+		<string>f75.txt</string>
+		<string>f76.txt</string>
+		<string>f77.txt</string>
+		<string>f78.txt</string>
+		<string>f79.txt</string>
+		<string>f80.txt</string>
+		<string>f81.txt</string>
+		<string>f82.txt</string>
+		<string>f83.txt</string>
+		<string>f84.txt</string>
+		<string>f85.txt</string>
+		<string>f86.txt</string>
+		<string>f87.txt</string>
+		<string>f88.txt</string>
+		<string>f89.txt</string>
+		<string>f90.txt</string>
+		<string>f91.txt</string>
+		<string>f92.txt</string>
+		<string>f93.txt</string>
+		<string>f94.txt</string>
+		<string>f95.txt</string>
+		<string>f96.txt</string>
+	</array>
+
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>txt</string>
+
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+
+	<key>BBLMCommentLineDefault</key>
+	<string>;</string>
+
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>AbsMag</string>
+		<string>Add</string>
+		<string>All</string>
+		<string>alpha</string>
+		<string>Ambient</string>
+		<string>Antialiasing</string>
+		<string>Animate</string>
+		<string>Annual</string>
+		<string>AppMag</string>
+		<string>aqua</string>
+		<string>Astro</string>
+		<string>Attach</string>
+		<string>AURORA</string>
+		<string>Auto</string>
+		<string>AutoView</string>
+		<string>Azimuth</string>
+		<string>Backbone</string>
+		<string>Buf</string>
+		<string>Backlight</string>
+		<string>BACKWARD</string>
+		<string>bdplane</string>
+		<string>Begin</string>
+		<string>Bighalo</string>
+		<string>black</string>
+		<string>Blink</string>
+		<string>blue</string>
+		<string>bonded</string>
+		<string>BOTH</string>
+		<string>bottom</string>
+		<string>boxes</string>
+		<string>brown</string>
+		<string>Button</string>
+		<string>ButtonLatch</string>
+		<string>ButtonReset</string>
+		<string>ButtonText</string>
+		<string>ButtonUnlatch</string>
+		<string>BVColor</string>
+		<string>Camera</string>
+		<string>Canopus</string>
+		<string>Capture</string>
+		<string>Celestial</string>
+		<string>Center</string>
+		<string>Channel</string>
+		<string>Chapter</string>
+		<string>Clear</string>
+		<string>Close</string>
+		<string>Cls</string>
+		<string>Color</string>
+		<string>Colorshift</string>
+		<string>COMET</string>
+		<string>Comment</string>
+		<string>Con</string>
+		<string>Cone</string>
+		<string>Cont</string>
+		<string>Control</string>
+		<string>Controller</string>
+		<string>Corona</string>
+		<string>countdown</string>
+		<string>cpk</string>
+		<string>CUBE</string>
+		<string>Cue</string>
+		<string>Cull</string>
+		<string>cyan</string>
+		<string>CYLINDER</string>
+		<string>Date</string>
+		<string>Delay</string>
+		<string>Detent</string>
+		<string>Dial</string>
+		<string>Dist</string>
+		<string>diffuse</string>
+		<string>diffusemap</string>
+		<string>Diurnal</string>
+		<string>Direction</string>
+		<string>Display</string>
+		<string>Distance</string>
+		<string>Droplet</string>
+		<string>Dome</string>
+		<string>DV</string>
+		<string>EarthClouds</string>
+		<string>EarthObj</string>
+		<string>Effect</string>
+		<string>Elevation</string>
+		<string>emissive</string>
+		<string>Exec</string>
+		<string>Exo</string>
+		<string>Face</string>
+		<string>Falloff</string>
+		<string>Filter</string>
+		<string>FlipU</string>
+		<string>FlipV</string>
+		<string>Fly</string>
+		<string>Fog</string>
+		<string>Folder</string>
+		<string>Follow</string>
+		<string>Font</string>
+		<string>footer</string>
+		<string>FORWARD</string>
+		<string>FPS</string>
+		<string>Frame</string>
+		<string>Gamma</string>
+		<string>Goto</string>
+		<string>gray</string>
+		<string>green</string>
+		<string>Group</string>
+		<string>Halo</string>
+		<string>HD</string>
+		<string>Home</string>
+		<string>header</string>
+		<string>HEMISPHERE</string>
+		<string>hetero</string>
+		<string>Hide</string>
+		<string>hip</string>
+		<string>IAX</string>
+		<string>ICEHALO</string>
+		<string>Idle</string>
+		<string>Image</string>
+		<string>Info</string>
+		<string>Init</string>
+		<string>Intensity</string>
+		<string>Interior</string>
+		<string>Jbox</string>
+		<string>Jbox1</string>
+		<string>Julian</string>
+		<string>Label</string>
+		<string>Labels</string>
+		<string>Latitude</string>
+		<string>LatLock</string>
+		<string>Layer3D</string>
+		<string>LCD</string>
+		<string>Level</string>
+		<string>Light</string>
+		<string>LightBlink</string>
+		<string>LightOff</string>
+		<string>LightOn</string>
+		<string>LightToggle</string>
+		<string>Lines</string>
+		<string>Load</string>
+		<string>Local</string>
+		<string>LocalAxis</string>
+		<string>LocalTime</string>
+		<string>Locate</string>
+		<string>lock</string>
+		<string>LOD</string>
+		<string>LogFly</string>
+		<string>LongMod</string>
+		<string>LongSet</string>
+		<string>Lookat</string>
+		<string>Loop</string>
+		<string>Lum</string>
+		<string>Macro</string>
+		<string>magenta</string>
+		<string>maroon</string>
+		<string>Mask</string>
+		<string>Material</string>
+		<string>MercuryObj</string>
+		<string>Message</string>
+		<string>midnight</string>
+		<string>MinSize</string>
+		<string>Mode</string>
+		<string>Navigator</string>
+		<string>navy</string>
+		<string>Next</string>
+		<string>Nohalo</string>
+		<string>noon</string>
+		<string>normal</string>
+		<string>normalmap</string>
+		<string>north</string>
+		<string>now</string>
+		<string>Object</string>
+		<string>Opaque</string>
+		<string>Open</string>
+		<string>orange</string>
+		<string>ORBIT</string>
+		<string>orbiter</string>
+		<string>Orbits</string>
+		<string>Orient</string>
+		<string>Ortho</string>
+		<string>Pan</string>
+		<string>Path</string>
+		<string>Pause</string>
+		<string>Picture</string>
+		<string>Ping</string>
+		<string>pink</string>
+		<string>Planetarium</string>
+		<string>PLANEXY</string>
+		<string>PLANEXZ</string>
+		<string>Play</string>
+		<string>Plugin</string>
+		<string>Point</string>
+		<string>Points</string>
+		<string>Pointsize</string>
+		<string>Pole</string>
+		<string>Poll</string>
+		<string>polygons</string>
+		<string>polysize</string>
+		<string>Pos</string>
+		<string>Position</string>
+		<string>Poweron</string>
+		<string>Preload</string>
+		<string>Previous</string>
+		<string>ProperName</string>
+		<string>Protect</string>
+		<string>purple</string>
+		<string>Radar</string>
+		<string>RAINBOW</string>
+		<string>Rainbow</string>
+		<string>RAINBOW</string>
+		<string>Range</string>
+		<string>RANGE</string>
+		<string>Rate</string>
+		<string>Rawview</string>
+		<string>RealTime</string>
+		<string>Reboot</string>
+		<string>red</string>
+		<string>Ref</string>
+		<string>Reference</string>
+		<string>Remove</string>
+		<string>Rewind</string>
+		<string>Replay</string>
+		<string>Reset</string>
+		<string>RollCI</string>
+		<string>RollSS</string>
+		<string>Rotate</string>
+		<string>Run</string>
+		<string>Satellites</string>
+		<string>Sc</string>
+		<string>Star</string>
+		<string>Scale</string>
+		<string>Scene</string>
+		<string>Seek</string>
+		<string>Select</string>
+		<string>Set</string>
+		<string>SetJulian</string>
+		<string>SetLatitude</string>
+		<string>SetLongitude</string>
+		<string>Shimmer</string>
+		<string>Show</string>
+		<string>Shutdown</string>
+		<string>ShutterDown</string>
+		<string>ShutterUp</string>
+		<string>Stretch</string>
+		<string>silver</string>
+		<string>Sirius</string>
+		<string>Size</string>
+		<string>Slider</string>
+		<string>slum</string>
+		<string>Smallhalo</string>
+		<string>Softedge</string>
+		<string>Sol</string>
+		<string>Solar</string>
+		<string>SolarSystem</string>
+		<string>Sound</string>
+		<string>south</string>
+		<string>SpaceCraft3</string>
+		<string>spacefill</string>
+		<string>specular</string>
+		<string>specularmap</string>
+		<string>Speed</string>
+		<string>SPHERE</string>
+		<string>SPHERE-A</string>
+		<string>SPHERE-E</string>
+		<string>SPHERE-H</string>
+		<string>SPHERE-M</string>
+		<string>Spice</string>
+		<string>Spot</string>
+		<string>Stars</string>
+		<string>Start</string>
+		<string>Stereo</string>
+		<string>Stop</string>
+		<string>SunObj</string>
+		<string>sunrise</string>
+		<string>sunset</string>
+		<string>Swap</string>
+		<string>SweetSpot</string>
+		<string>System</string>
+		<string>TAG</string>
+		<string>teal</string>
+		<string>Tel</string>
+		<string>TeadrU</string>
+		<string>TeadrV</string>
+		<string>Text</string>
+		<string>texture</string>
+		<string>Tilt</string>
+		<string>Time</string>
+		<string>title</string>
+		<string>today</string>
+		<string>top</string>
+		<string>Trail</string>
+		<string>Trails</string>
+		<string>Transform</string>
+		<string>Unit</string>
+		<string>Unload</string>
+		<string>unlock</string>
+		<string>VenusObj</string>
+		<string>Video</string>
+		<string>View</string>
+		<string>violet</string>
+		<string>Volume</string>
+		<string>Vote</string>
+		<string>Wave</string>
+		<string>white</string>
+		<string>wireframe</string>
+		<string>World</string>
+		<string>Yaw</string>
+		<string>YawPitchCI</string>
+		<string>YawPitchSS</string>
+		<string>yellow</string>
+		<string>Zero</string>
+		<string>One</string>
+		<string>SrcAlpha</string>
+		<string>InvSrcAlpha</string>
+		<string>DestColor</string>
+		<string>BlendA</string>
+		<string>TflipU</string>
+		<string>TflipV</string>
+		<string>cw</string>
+		<string>ccw</string>
+		<string>Clamp</string>
+		<string>Mirror</string>
+		<string>Wrap</string>
+		<string>Inversed</string>
+		<string>on</string>
+		<string>off</string>
+		<string>inverse</string>
+		<string>invert</string>
+		<string>normal</string>
+		<string>none</string>
+		<string>invert</string>
+		<string>a</string>
+		<string>um</string>
+		<string>millimeter</string>
+		<string>m</string>
+		<string>km</string>
+		<string>mm</string>
+		<string>gm</string>
+		<string>au</string>
+		<string>tm</string>
+		<string>ly</string>
+		<string>p</string>
+		<string>kp</string>
+		<string>mp</string>
+		<string>gp</string>
+	</array>
+		
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Characters</key>
+		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz</string>		
+
+		<key>Open Strings 1</key>
+		<string>&quot;</string>
+		<key>Close Strings 1</key>
+		<string>&quot;</string>
+		<key>End-of-line Ends Strings 1</key>
+		<true/>
+		<key>Escape Char in Strings 1</key>
+		<string>\</string>
+	
+		<key>Open Line Comments</key> <string>;</string>
+		<key>PreferLineCommentsWhenCommenting</key>
+		<true/>
+		
+		<key>Comment Pattern</key> 
+		<string><![CDATA[
+		(?x: 
+		(;.*$) | ('.*$) 
+		)]]></string>
+		
+		<key>String Pattern</key> 
+		<string><![CDATA[ 
+		(?x: 
+			("(\\"|[^"\r]|\\\r)*") | (?# Double-quote) 
+			(?s: 
+				<<-?(?P<delim>\w+) (?# Here-document)
+				.*?
+				(?P=delim)
+			)
+		)
+		]]></string>
+		
+		<key>Skip Pattern</key> 
+		<string><![CDATA[ 
+		(?x: 
+		(?P>comment) |
+		(?P>string)
+		)]]></string>
+	
+  </dict>
+
+</dict>
+</plist>
